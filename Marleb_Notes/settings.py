@@ -29,6 +29,13 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+MY_APP = [
+    'note',
+]
+
+THIRD_PARTY_APPS = [
+    'rest_framework'
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-]
+] + MY_APP + THIRD_PARTY_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
